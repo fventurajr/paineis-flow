@@ -5,6 +5,7 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -37,15 +38,29 @@ public class PaineisFlow extends JFrame {
 		tela.add(painel1);
 		tela.add(painel2);
 		
+		JButton botao1 = new JButton("Botão A");
+		JButton botao2 = new JButton("Botão B");
 		
+		painel1.add(botao1);
+		painel1.add(botao2);
 		
+		JButton botao3 = new JButton("Botão C");
+		JButton botao4 = new JButton("Botão D");
+		
+		painel2.add(botao3);
+		painel2.add(botao4);
+		
+		this.setSize(280,  200);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setVisible(true);
 		
 		
 		
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		new PaineisFlow();
+		
 	}
 
 }
